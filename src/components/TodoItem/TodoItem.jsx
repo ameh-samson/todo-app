@@ -1,4 +1,4 @@
-import "./TodoItem.css";
+import styles from "./TodoItem.module.css";
 
 const TodoItem = ({ item }) => {
   return (
