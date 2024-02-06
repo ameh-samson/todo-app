@@ -1,3 +1,7 @@
 .header {
   background: #f7ca18;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 1em;
 }
