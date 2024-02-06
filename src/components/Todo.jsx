@@ -22,7 +22,7 @@ const Todo = () => {
       </form>
 
       {todos.map((item) => (
-        <TodoItem item={item} />
+        <TodoItem item={item} key={item} />
       ))}
     </div>
   );
