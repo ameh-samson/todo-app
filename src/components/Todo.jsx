@@ -19,7 +19,9 @@ const Todo = () => {
         />
         <button type="submit">Add</button>
       </form>
-      {console.log(todos)}
+      {todos.map((item) => (
+        <h3>{item}</h3>
+      ))}
     </div>
   );
 };
