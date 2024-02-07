@@ -1,8 +1,8 @@
-import TodoItem from "./TodoItem";
-
+import TodoItem from "../TodoItem/TodoItem";
+import styles from "./TodoList.module.css";
 const TodoList = ({ todos }) => {
   return (
-    <div>
+    <div className={styles.todoList}>
       {todos.map((item) => (
         <TodoItem item={item} key={item} />
       ))}
