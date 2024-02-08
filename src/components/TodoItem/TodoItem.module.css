@@ -6,6 +6,18 @@
 .itemName {
   font-weight: bold;
   padding-block: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.deleteBtn {
+  padding: 0.8em 1.5em;
+  border: none;
+  background: #f7941d;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .line {
