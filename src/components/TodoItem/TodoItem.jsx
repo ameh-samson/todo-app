@@ -7,7 +7,7 @@ const TodoItem = ({ item, todos, setTodos }) => {
 
   const handleClick = (name) => {
     const newArr = todos.map((todo) =>
-      todo.name === name ? { ...todo, done: !todo.done } : ""
+      todo.name === name ? { ...todo, done: !todo.done } : todo
     );
     setTodos(newArr);
   };
