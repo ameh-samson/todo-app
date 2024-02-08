@@ -9,11 +9,13 @@ const Todo = () => {
   const completedTodos = todos.filter((todo) => todo.done).length;
 
   return (
-    <div className={styles.todoWrapper}>
-      <Form todos={todos} setTodos={setTodos} />
-      <TodoList todos={todos} setTodos={setTodos} />
+    <>
+      <div className={styles.todoWrapper}>
+        <Form todos={todos} setTodos={setTodos} />
+        <TodoList todos={todos} setTodos={setTodos} />
+      </div>
       <Footer completedTodos={completedTodos} totalTodos={todos.length} />
-    </div>
+    </>
   );
 };
 
