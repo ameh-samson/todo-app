@@ -8,7 +8,7 @@ const Todo = () => {
   return (
     <div className={styles.todoWrapper}>
       <Form todos={todos} setTodos={setTodos} />
-      <TodoList todos={todos} />
+      <TodoList todos={todos} setTodos={setTodos} />
     </div>
   );
 };

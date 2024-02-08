@@ -1,10 +1,10 @@
 import TodoItem from "../TodoItem/TodoItem";
 import styles from "./TodoList.module.css";
-const TodoList = ({ todos }) => {
+const TodoList = ({ todos, setTodos }) => {
   return todos.length > 0 ? (
     <div className={styles.todoList}>
       {todos.map((item) => (
-        <TodoItem item={item} key={item} />
+        <TodoItem item={item} key={item} todos={todos} setTodos={setTodos} />
       ))}
     </div>
   ) : (
