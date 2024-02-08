@@ -7,11 +7,12 @@ import Footer from "../Footer/Footer";
 const Todo = () => {
   const [todos, setTodos] = useState([]);
   const completedTodos = todos.filter((todo) => todo.done).length;
+
   return (
     <div className={styles.todoWrapper}>
       <Form todos={todos} setTodos={setTodos} />
       <TodoList todos={todos} setTodos={setTodos} />
-      <Footer completedTodos={completedTodos} />
+      <Footer completedTodos={completedTodos} totalTodos={todos.length} />
     </div>
   );
 };
