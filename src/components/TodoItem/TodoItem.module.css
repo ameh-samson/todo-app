@@ -1,0 +1,13 @@
+.item {
+  color: #353935;
+  font-size: 1.1rem;
+}
+
+.itemName {
+  font-weight: bold;
+  padding-block: 1em;
+}
+
+.line {
+  border: 1px solid #f4f4f4;
+}

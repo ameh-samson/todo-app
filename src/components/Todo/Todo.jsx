@@ -6,7 +6,7 @@ import TodoList from "../TodoList/TodoList";
 const Todo = () => {
   const [todos, setTodos] = useState([]);
   return (
-    <div>
+    <div className={styles.todoWrapper}>
       <Form todos={todos} setTodos={setTodos} />
       <TodoList todos={todos} />
     </div>
